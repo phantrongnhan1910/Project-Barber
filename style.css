@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5 ease;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    width: 100%;
+    height: 50rem;
+    background: url(./image/banner.avif);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+header .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    margin-bottom: 5rem;
+}
+
+header .home .logo {
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(231, 13, 13);
+}
+
+header nav ul {
+    display: flex;
+    margin: 1rem 3rem;
+}
+
+header nav ul a {
+    padding: 2rem 2rem;
+    font-size: 20px;
+    color: #B59D5C;
+}
+
+.heading {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 40px;
+    align-items: center;
+}
+
+.heading h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.heading span {
+    color: #B59D5C;
+}
+
+.heading h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #B59D5C;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 1.5rem 4rem;
+    background-color: #B59D5C;
+    color: #000;
+    border: none;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(23, 18, 18);
+    color: #B59D5C;
+    transition: calc(0.5s);
+}
+
+
+/* About */
+
+.about {
+    max-width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+}
+
+.about .about-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-main img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.about .about-text {
+    width: 30rem;
+    color: #B59D5C;
+    margin-left: 3rem;
+}
+
+.about .about-text h4 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.about .about-text span {
+    color: #121212;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.about .about-text p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+
+/* Services */
+
+.services .services-text h4 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #B59D5C;
+}
+
+.services .services-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+.services .services-image img {
+    width: 50%;
+    padding: 1rem 1rem;
+    transition: .5s all ease-in-out;
+}
+
+.services .services-image img:hover {
+    transform: scale(0.9);
+}
+
+
+/* Team */
+
+.team-text h4 {
+    margin-top: 4rem;
+    font-size: 5rem;
+    text-align: center;
+    color: #B59D5C;
+}
+
+.list-team {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.barber-list {
+    width: 30%;
+}
+
+.list-team .barber-list img {
+    width: 100%;
+}
+
+.list-team .barber-list h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.list-team .barber-list h5 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    color: #B59D5C;
+}
+
+.list-team .barber-list p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+/* barber shop */
+
+.shop-text h2 {
+    margin-top: 4rem;
+    font-size: 5rem;
+    text-align: center;
+    color: #B59D5C;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 1rem 0;
+    transition: 0.5s;
+}
+
+.container .box:hover {
+    transform: scale(0.9);
+}
+
+.container .box img {
+    width: 45%
+}
+
+.container .box h2 {
+    font-size: 2rem;
+    color: #B59D5C;
+}
+
+.container .box .price {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.container .box .box-btn {
+    padding: 1rem 2rem;
+    background-color: #B59D5C;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.container .box .box-btn:hover {
+    background-color: rgb(23, 18, 18);
+    color: #B59D5C;
+    transition: calc(0.5s);
+}
+
+
+/* Contact */
+
+.banner-footer .container {
+    background-image: url(./image/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    position: relative;
+}
+
+.banner-footer .banner-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-footer .banner-container img {
+    margin-bottom: 1rem;
+}
+
+.banner-footer .banner-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-footer .banner-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner-footer .banner-container button {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #B59D5C;
+    color: #fff;
+    border: none;
+}
+
+.banner-footer .banner-container button:hover {
+    background-color: rgb(23, 18, 18);
+    color: #B59D5C;
+    transition: calc(0.5s);
+}
+
+
+/* footer */
+
+.contact .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.contact {
+    background-color: #B59D5C;
+    padding: 3rem 0;
+}
+
+.contact .container {
+    margin: auto;
+}
+
+.contact .container .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contact-item {
+    width: 30%;
+    padding: 0 1.5rem;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-us .contact-icon {
+    margin-right: 2rem;
+}
+
+.contact-item li {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    text-transform: capitalize;
+}
+
+.contact-item ul li a {
+    transition: all 0.4s ease;
+    color: #000;
+}
+
+.contact-link h3 {
+    margin-bottom: 1rem;
+}
+
+.contact-item ul li a:hover {
+    transform: scale(1.2);
+    color: #000;
+    padding-left: 1rem;
+}
+
+.link-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-list ul li a {
+    padding: 0 1rem;
+    transition: all 0.4s ease;
+}
+
+.link-list li:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1140px) {
+    .nav {
+        display: none;
+    }
+    .heading {
+        display: none;
+    }
+    .about .about-main {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about .about-main img {
+        width: 90%;
+    }
+    .about .about-text {
+        text-align: center;
+        width: 80%;
+    }
+    .contact-us {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .about-main {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about .about-main img {
+        width: 90%;
+    }
+    .about .about-text {
+        text-align: center;
+        width: 90%;
+    }
+    .services .services-image img {
+        width: 100%;
+    }
+    .services-image img {
+        width: 100%;
+    }
+    .list-team {
+        flex-direction: column;
+    }
+    .list-team .barber-list {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .box {
+        width: 90%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .contact .container .contact-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .about .about-text {
+        text-align: center;
+        width: 80%;
+    }
+    .contact-us {
+        flex-direction: column;
+    }
+}
